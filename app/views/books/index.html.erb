@@ -23,3 +23,14 @@
   </tbody>
 </table>
 </body>
+
+<h2>New book</h2>
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
+  <div class="fierd">本のタイトル</div>
+  <%= f.text_field :title %>
+  
+  <div class="field">感想</div>
+  <%= f.text_area :body %>
+  
+  <%= f.submit 'Create Book' %>
+  <% end %>
