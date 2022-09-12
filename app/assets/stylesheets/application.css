@@ -32,3 +32,11 @@ th{
 .field{
   margin-bottom: 10px;
 }
+
+.notice{
+  color: green;
+}
+
+a{
+  color: #000;
+}
